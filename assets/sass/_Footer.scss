@@ -1,0 +1,120 @@
+@import 'Variables';
+$footer-body:#999999;
+.footer-area{
+    background-color: $secondary-color;
+    
+    color: $footer-body;
+    .footer-wrapper{
+        padding: 65px 0;
+        border-bottom: 1px solid #23262c;
+    }
+    .footer-bottom{
+        overflow: hidden;
+        padding: 30px 60px;
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+.footer-widget{
+    .about{
+        .logo{
+            margin-bottom: 35px;
+        }
+        .social-icon{
+            display: inline;
+            margin-top: 20px;
+            li{
+                display: inline-block;
+                margin-right: 10px;
+               
+               
+               
+                a{
+                    
+                    text-align: center;
+                    height: 35px;
+                    width: 35px;
+                    line-height: 35px;
+                    display: block;
+                    background-color: #1b2334;
+                    border-radius: 50%; 
+                    color: #fff;
+                    transition: all 0.3s linear;
+                    &:hover{
+                        background-color: $primary-color;
+                    }                   
+                }
+            }
+        }
+    }
+    .footer-menu{
+        
+        .footer-menu{
+            li{
+                margin-bottom: 10px;
+                padding-left: 15px;
+                position: relative;
+                &::before{
+                    content: '';
+                    position: absolute;
+                    top: 10px;
+                    left: 0;
+                    width: 5px;
+                    height: 5px;
+                    background-color: #45484d;
+                }
+                a{
+                    text-transform: capitalize;
+                    color:#969697;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .title{
+        font-size: 15px;
+        font-weight: 900;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        color: #fff;
+    }
+    .footer-contact{
+        .contact-info{
+            li{
+                margin-bottom: 10px;
+            }
+        }
+        .footer-form{
+            margin-top: 20px;
+            .input-group{
+                input{
+                    background-color: #2f3138!important;
+                    color: #cccccc;
+                    border: none;
+                    border-radius: 0;
+                }
+                
+                .form-control:focus{
+                    outline: none;
+                    box-shadow: none;
+                }
+                button{
+                    border-radius: 0;
+                    border: none;
+                    background-color: $primary-color;
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: #fff;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
